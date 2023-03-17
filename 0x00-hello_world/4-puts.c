@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - entry point
- * return: alwayse 0 (success)
+ * return: alwayse 0 (suc
  */
 int main(void)
 {
