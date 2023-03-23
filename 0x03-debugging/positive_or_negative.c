@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * positive_or_negative - Function
  * @i: parameter
