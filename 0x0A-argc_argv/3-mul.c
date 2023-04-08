@@ -12,11 +12,13 @@ int main(int argc, char **argv)
 	int i;
 	int result = 1;
 
-	if (argc < 4)
+	if (argc ==  3)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			int x = strtol(argv[i], NULL, 10);
+			int x;
+
+			x = strtol(argv[i], NULL, 10);
 			result = result * x;
 		}
 		printf("%d\n", result);
