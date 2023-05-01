@@ -13,14 +13,13 @@ int pop_listint(listint_t **head)
 	if (head == NULL || *head == NULL)
 		return (0);
 
-	/*stroring the head in the temporary location*/
-	temp = *head;
-
 	/*moving the head to the next node*/
-	*head = (*head)->next;
 	num = (*head)->n;
+	temp = (*head)->next;
 
 	/*deleting the first node*/
-	free(temp);
+	free(*head);
+	*head = temp;
+
 	return (num);
 }
